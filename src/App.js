@@ -10,6 +10,7 @@ import HowItWorks from './pages/HowItWorks.js';
 import ContactUs from './pages/ContactUs.js';
 import Faq from './pages/Faq.js';
 import WhyUs from './pages/WhyUs.js';
+import Testimonials from './pages/Testimonials.js'
 
 const App = () =>{
     return (
@@ -21,6 +22,8 @@ const App = () =>{
             <Route path="/ContactUs" exact component={ContactUs} />            
             <Route path="/Faq" exact component={Faq} />
             <Route path="/WhyUs" exact component={WhyUs} />
+            <Route path="/Testimonials" exact component={Testimonials} />
+
         </BrowserRouter>
         );
 }; 

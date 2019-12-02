@@ -12,12 +12,15 @@ const Header = ()=>{
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-            <Link to="/HowItWorks">  Navigate to page 2 </Link>
-            <Nav.Link href="HowItWorks">How it works</Nav.Link>
-            <Nav.Link href="#link">FAQ</Nav.Link>
-            <Nav.Link href="#link">Why Us</Nav.Link>
-            <Nav.Link href="#link">Testimonials</Nav.Link>
-            <Nav.Link href="#link">Contact Us</Nav.Link>
+
+            <Nav.Link  as={Link} to="/HowItWorks"> HowItWorks </Nav.Link>
+            <Nav.Link  as={Link} to="/Faq"> FAQ </Nav.Link>
+            <Nav.Link  as={Link} to="/WhyUs"> WhyUs </Nav.Link>
+
+            <Nav.Link  as={Link} to="/Testimonials"> Testimonials </Nav.Link>
+            <Nav.Link  as={Link} to="/ContactUs"> ContactUs </Nav.Link>
+            
+
             <Nav.Link href="#link">Ph: 800-288-8500</Nav.Link>
             </Nav>
         </Navbar.Collapse>
