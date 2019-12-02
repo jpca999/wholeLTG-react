@@ -1,6 +1,6 @@
 import React from 'react';
 import { col, Row, Container } from 'react-bootstrap';
-import { Button, Navbar, Nav,NavDropdown, Form, FormControl } from 'react-bootstrap';
+import { Button, Navbar, Nav, NavDropdown, Form, FormControl } from 'react-bootstrap';
 import "./Header.scss";
 import image from "../Images/mylogo.png";
 import { Link } from 'react-router-dom'; 
@@ -12,7 +12,8 @@ const Header = ()=>{
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-            <Nav.Link href="#home">How it works</Nav.Link>
+            <Link to="/HowItWorks">  Navigate to page 2 </Link>
+            <Nav.Link href="HowItWorks">How it works</Nav.Link>
             <Nav.Link href="#link">FAQ</Nav.Link>
             <Nav.Link href="#link">Why Us</Nav.Link>
             <Nav.Link href="#link">Testimonials</Nav.Link>
