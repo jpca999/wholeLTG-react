@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header'; 
 
-import PageOne from './pages/PageOne';
+import Home from './pages/Home';
 import PageTwo from './pages/PageTwo'; 
 
 import HowItWorks from './pages/HowItWorks.js';
@@ -16,7 +16,7 @@ const App = () =>{
     return (
         <BrowserRouter>
             <Header />
-            <Route path="/" exact component={PageOne} />
+            <Route path="/" exact component={Home} />
             <Route path="/page2" exact component={PageTwo} />
             <Route path="/Howitworks" exact component={HowItWorks} />
             <Route path="/ContactUs" exact component={ContactUs} />            
