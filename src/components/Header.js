@@ -20,7 +20,7 @@ const Header = ()=>{
             <Nav.Link  as={Link} to="/Testimonials"> Testimonials </Nav.Link>
             <Nav.Link  as={Link} to="/ContactUs"> ContactUs </Nav.Link>
             
-            <Nav.Link href="#link">Ph: 800-288-8500</Nav.Link>
+            <Nav.Link className="header-phoneno" href="#link"> <span className="glyphicon glyphicon-phone-alt"></span>  800-288-8500</Nav.Link>
             </Nav>
         </Navbar.Collapse>
         </Navbar>
