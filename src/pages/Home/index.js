@@ -4,21 +4,18 @@ import { Col, Row, Container, Form } from 'react-bootstrap';
 import './index.scss';  
 import PropTypes from 'prop-types'
 
-
 const Home = () =>{
         return <div> 
         <Container fluid={true} className="tinted-image">
-        <h3>
-            <h1 className="almost-done"> Get cash for your  </h1>
-            <h1 className="almost-done-2"> House fast </h1>
-        </h3>
+        <section className="insideTinted">
+            <h1 className="get-cash-heading"> Get Cash For Your House </h1> 
+        
+        <h3 className="index-h3">We buy houses - we're home buyers who will buy your house "AS IS" and close on your timeline. You won’t have to clean, paint or fix a thing. Don’t waste
+        any more time or money. </h3>
+        
+        </section>
 
-
-        <h3 className="index-h3">We buy houses - we're home buyers who will buy your house "AS IS" and close </h3>
-        <h3 className="index-h3"> on your timeline. You won’t have to clean, paint or fix a thing. Don’t waste </h3> 
-        <h3 className="index-h3"> any more time or money.</h3>
-
-        <div className="s130">
+        <div className="s130 pull-left">
           <form>
             <div className="inner-form">
               <div className="input-field first-wrap">
@@ -35,8 +32,6 @@ const Home = () =>{
             </form>
         </div>
                 
-
-
 </Container>
     </div>
 }

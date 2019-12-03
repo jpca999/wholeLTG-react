@@ -5,14 +5,14 @@ import "./Header.scss";
 import image from "../Images/mylogo.png";
 import { Link } from 'react-router-dom'; 
 
+
 const Header = ()=>{
     return (   
-        <Navbar bg="light" expand="md">
+        <Navbar bg="light" expand="md" className="HeaderHeight">
         <Navbar.Brand style={{backgroundImage: `url(${image}` }} href="#home">Liberty Trust Group</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-
             <Nav.Link  as={Link} to="/HowItWorks"> How It Works? </Nav.Link>
             <Nav.Link  as={Link} to="/Faq"> FAQ </Nav.Link>
             <Nav.Link  as={Link} to="/WhyUs"> Why Us </Nav.Link>
@@ -20,7 +20,6 @@ const Header = ()=>{
             <Nav.Link  as={Link} to="/Testimonials"> Testimonials </Nav.Link>
             <Nav.Link  as={Link} to="/ContactUs"> ContactUs </Nav.Link>
             
-
             <Nav.Link href="#link">Ph: 800-288-8500</Nav.Link>
             </Nav>
         </Navbar.Collapse>

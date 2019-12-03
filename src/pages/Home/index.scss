@@ -1,9 +1,7 @@
-// body{
-//     background: red;
-// }
-
 
 $primary-red: #f04134 !important;
+
+/*  start first block */ 
 
 .cashOfferBtn{
   background: #f04134;
@@ -12,32 +10,41 @@ $primary-red: #f04134 !important;
   background-image: url('../../Images/home3.jpg');
 }
 
-.almost-done{
+.get-cash-heading{
   font-size: 80px;
   font-weight: 700;
   line-height: 80px;
   margin-top: -17px; 
-  font-weight: bolder;
+  font-weight: 700;
   color: white;
   padding: 15px;  
+  // max-width: 890px;
+  
 }
 
-.almost-done-2{
-  margin-top: 4px !important; 
-  font-size: 80px;
-  font-weight: 700;
-  line-height: 80px;
-  margin-top: -17px; 
-  font-weight: bolder;
-  padding: 15px;  
-  color: white; 
-}
+// .get-cash-heading-2{
+//   margin-top: -32px !important; 
+//   font-size: 80px;
+//   font-weight: 700;
+//   line-height: 80px;
+//   font-weight: 700;
+//   padding: 15px;  
+//   color: white; 
+// }
 
 .index-h3{
   font-size: 30px;
   margin-top: 5px; 
-  color: white; 
+  color: #FFF; 
   margin-bottom: 20px; 
+  line-height: 31px;
+  opacity:.6; 
+}
+
+
+.HeaderHeight{
+  height: 120px;
+  background: white;
 }
 
 .tinted-image {
@@ -47,6 +54,62 @@ $primary-red: #f04134 !important;
     /* bottom, image */
     url(../../Images/home7.jpg);
 }
+
+.insideTinted{
+  margin-left: 100px; 
+  margin-right: 40px; 
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+@media screen and (min-width: 721px) and (max-width: 1000px) {
+  .get-cash-heading{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 80px;
+    margin-top: -17px; 
+    font-weight: 700;
+    color: white;
+    padding: 15px;  
+  }
+
+  .insideTinted{
+    margin-left: 100px; 
+    margin-right: 40px; 
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+}
+
+/* mobile */ 
+@media screen and (max-width: 720px) {
+    .get-cash-heading{
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 60px;
+      margin-top: -17px; 
+      font-weight: 700;
+      color: white;
+      padding: 0px;  
+    }
+   
+    .insideTinted{
+      margin-left: 20px; 
+      margin-right: 20px; 
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    .index-h3{
+      font-size: 15px;
+      margin-top: 5px; 
+      color: #FFF; 
+      margin-bottom: 20px; 
+      line-height: 31px;
+      opacity:.6; 
+    }
+
+  }
+
+  /*  end first block */ 
+
 
 // informationDiv
 
@@ -61,7 +124,6 @@ $primary-red: #f04134 !important;
   background: #f4ffff; 
 
 }
-
 
 .p-above-leading{
   margin-bottom: 20px !important; 
