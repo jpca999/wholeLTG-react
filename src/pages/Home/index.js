@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import Footer from '../../components/Footer'; 
 import iconpenpaper from './index/icon-pen-paper.png';
 import iconwallet from './index/icon-wallet.png'; 
+import fivestars from './index/5stars.png'; 
 
 
 const Home = () =>{
@@ -284,16 +285,16 @@ const Home = () =>{
           <div className="col-sm-4 col-xs-12"> 
             <div className="testi-col">   
               <div className="text-center">
-                <img className="fivestar" src="/Images/index/5stars.png" alt="" /> 
+                <img className="fivestar"  src={fivestars} alt="" /> 
               </div>     
               <p className="testi-p"> first The people that work at Homevestors made the experience very pleasant.</p> 
-              <p className="testi-name text-center"> Jay </p>
+              <p className="testi-name text-center"> Jay1 </p>
             </div>
           </div>
           <div className="col-sm-4 col-xs-12 ">
             <div className="testi-col">  
               <div className="text-center">
-                <img className="fivestar" src="/Images/index/5stars.png" alt="" /> 
+                <img className="fivestar" src={fivestars} alt="" /> 
               </div>     
               <p className="testi-p"> the people that work at Homevestors made the experience very pleasant.</p> 
               <p className="testi-name text-center"> Jay </p>
@@ -302,7 +303,7 @@ const Home = () =>{
           <div className="col-sm-4 col-xs-12 ">
             <div className="testi-col">   
               <div className="text-center">
-                <img className="fivestar" src="/Images/index/5stars.png" alt="" /> 
+                <img className="fivestar" src={fivestars} alt="" /> 
               </div>     
               <p className="testi-p"> the people that work at Homevestors made the experience very pleasant.</p> 
               <p className="testi-name text-center"> Jay </p>
