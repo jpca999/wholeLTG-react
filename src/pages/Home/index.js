@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import { Col, Row, Container, Form } from 'react-bootstrap';
 import './index.scss';  
 import PropTypes from 'prop-types'
+import Footer from '../../components/Footer'; 
 
 const Home = () =>{
         return <div> 
@@ -97,7 +98,6 @@ const Home = () =>{
 
 
    {/* comparison */}
-
    
    <div className="comparison">
         <table>
@@ -267,11 +267,91 @@ const Home = () =>{
           </tbody>
         </table>
       </div>
-      
 
 
 
 
+      {/* testimonials start */}
+      <Container fluid={true}  >
+        <div className="text-center">
+          <p className="p-above-leading">Testimonials and Reviews </p>
+          <h2 className="leading-h2"> See what our satisfied sellers have to say.</h2>
+        </div>
+        <div className="row push-down">
+          <div className="col-sm-4 col-xs-12"> 
+            <div className="testi-col">   
+              <div className="text-center">
+                <img className="fivestar" src="/Images/index/5stars.png" alt="" /> 
+              </div>     
+              <p className="testi-p"> first The people that work at Homevestors made the experience very pleasant.</p> 
+              <p className="testi-name text-center"> Jay </p>
+            </div>
+          </div>
+          <div className="col-sm-4 col-xs-12 ">
+            <div className="testi-col">  
+              <div className="text-center">
+                <img className="fivestar" src="/Images/index/5stars.png" alt="" /> 
+              </div>     
+              <p className="testi-p"> the people that work at Homevestors made the experience very pleasant.</p> 
+              <p className="testi-name text-center"> Jay </p>
+            </div>
+          </div>
+          <div className="col-sm-4 col-xs-12 ">
+            <div className="testi-col">   
+              <div className="text-center">
+                <img className="fivestar" src="/Images/index/5stars.png" alt="" /> 
+              </div>     
+              <p className="testi-p"> the people that work at Homevestors made the experience very pleasant.</p> 
+              <p className="testi-name text-center"> Jay </p>
+            </div>
+          </div>
+        </div>
+      </Container>
+
+
+
+
+      <Container fluid={true}  className="big-1">
+        <div className="row">
+          <div className="col-7">
+            <h1 className="almost-done"> Get cash for your</h1>
+            <h1 className="almost-done"> House fast</h1>
+            <br />
+            <h3 className="index-h3">We buy houses - we're home buyers who will buy your house "AS IS" and close </h3>
+            <h3 className="index-h3"> on your timeline. You won’t have to clean, paint or fix a thing. Don’t waste </h3> 
+            <h3 className="index-h3"> any more time or money.</h3>
+          </div>
+        </div>
+      </Container>
+
+{/* yellow  */}
+
+
+<div className="yellow-footer-cta">  
+        <div className="container-fluid bg-yellow-lower">
+          <h4 className="almost-done-yellow-top"> Questions?</h4>   
+          <div className="row">
+            <div className="col-sm-4 col-xs-12">
+              <h4 className="almost-done-yellow-head"> WHO TYPICALLY SELLS HOUSES TO WE BUY UGLY HOUSES? </h4>                    
+              <p className="yellow-para">People from all walks of life sell to us, but they all share one thing in common: they need to sell a house quickly to a trusted home buyer who can make a cash offer and close on their schedule. …</p>
+              <a href="https://www.w3schools.com" className="read-more"> Read More</a>
+            </div>
+            <div className="col-sm-4 col-xs-12">
+              <h4 className="almost-done-yellow-head"> WHAT IF MY HOUSE ISN'T UGLY? </h4>                    
+              <p className="yellow-para">We’d still like to hear from you. Our buyers are interested in houses that might be good investments, regardless of condition. Whether your house needs minimal work or a lot, call us. …</p>
+              <a href="https://www.w3schools.com" className="read-more"> Read More</a>
+            </div>
+            <div className="col-sm-4 col-xs-12">
+              <h4 className="almost-done-yellow-head"> HOW DOES THE HOUSE BUYING PROCESS WORK? </h4>                    
+              <p className="yellow-para">We follow a quick and simple process that makes things easy for sellers: 1.) Call us. 2.) Get your cash offer. 3.) Close on your schedule. …</p>
+              <a href="https://www.w3schools.com" className="read-more"> Read More</a>
+            </div>                    
+          </div>
+          <div className="quest-bk" /> 
+        </div>
+      </div>
+
+      <Footer />
     </div>
 }
 
