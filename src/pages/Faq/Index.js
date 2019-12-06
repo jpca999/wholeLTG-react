@@ -6,7 +6,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
-// import mylogo from './../   '
+// import mylogo from './mylogo.png'; 
+import mylogo from './mylogo.png'; 
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -28,7 +29,7 @@ const useStyles = makeStyles(theme => ({
         {/* xs=3 LTG icon */}
           <Grid item xs={4}>
             <div   className="footLogo">
-                <img className="footLogo" alt="foot logo" src="./mylogo.png" />
+                <img className="footLogo" alt="foot logo" src={mylogo} />
                 </div>
           </Grid>
           <Grid item xs={4}>
