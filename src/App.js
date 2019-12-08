@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header'; 
 
-import Home from './pages/Home/Index.js';
+import Home from './pages/Home/index.js';
 import Faq from './pages/Faq/Index.js';
 
 import PageTwo from './pages/PageTwo'; 

@@ -4,9 +4,9 @@ import { Col, Row, Container, Form } from 'react-bootstrap';
 import './index.scss';  
 import PropTypes from 'prop-types'; 
 import Footer from '../../components/Footer'; 
-import iconpenpaper from './index/icon-pen-paper.png';
-import iconwallet from './index/icon-wallet.png'; 
-import fivestars from './index/5stars.png'; 
+import iconpenpaper from './ImagesIndex/icon-pen-paper.png';
+import iconwallet from './ImagesIndex/icon-wallet.png'; 
+import fivestars from './ImagesIndex/5stars.png'; 
 
 
 const Home = () =>{
