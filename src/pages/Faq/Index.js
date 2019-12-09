@@ -9,6 +9,7 @@ import Grid from '@material-ui/core/Grid';
 
 import './Faq.scss';  
 
+import Basic from './Basic'; 
 
 
   const Faq = () =>{
@@ -192,6 +193,7 @@ import './Faq.scss';
         </div>
       </div>
 
+      <Basic />
 
       </Container>
       </div>); 
