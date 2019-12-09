@@ -182,18 +182,14 @@ import Basic from './Basic';
               <h2 className="right-faq-h1 text-center"> Request a free, no obligation consultation.</h2>                
               <div className="row">
                 <div className="col-sm-12 col-xs-12"> 
-                  <div className="wrap-input100 validate-input" data-validate="Enter username">
-                    <input className="input100" type="text" name="username2" placeholder="First Name" />
-                    <span className="focus-input100" data-placeholder="" />
-                  </div>
+                  <Basic />
+
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <Basic />
 
       </Container>
       </div>); 
