@@ -8,6 +8,7 @@ import iconpenpaper from './ImagesIndex/icon-pen-paper.png';
 import iconwallet from './ImagesIndex/icon-wallet.png'; 
 import fivestars from './ImagesIndex/5stars.png'; 
 
+import HomeTestimonials from './HomeTestimonials'; 
 
 const Home = () =>{
         return <div> 
@@ -288,7 +289,7 @@ const Home = () =>{
                 <img className="fivestar"  src={fivestars} alt="" /> 
               </div>     
               <p className="testi-p"> first The people that work at Homevestors made the experience very pleasant.</p> 
-              <p className="testi-name text-center"> Jay1 </p>
+              <p className="testi-name text-center"> Jay2 </p>
             </div>
           </div>
           <div className="col-sm-4 col-xs-12 ">
@@ -306,12 +307,17 @@ const Home = () =>{
                 <img className="fivestar" src={fivestars} alt="" /> 
               </div>     
               <p className="testi-p"> the people that work at Homevestors made the experience very pleasant.</p> 
-              <p className="testi-name text-center"> Jay </p>
+              <p className="testi-name text-center"> Jay3 </p>
             </div>
           </div>
         </div>
+      
       </Container>
+      <br/> <br/>
+      {/* <HomeTestimonials /> */}
 
+
+  <br/> <br/>
 
 {/* yellow  */}
 
@@ -339,7 +345,6 @@ const Home = () =>{
           <div className="quest-bk" /> 
         </div>
       </div>
-
       <Footer />
     </div>
 }

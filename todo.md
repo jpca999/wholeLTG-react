@@ -1,6 +1,7 @@
 
 
-
+use for col/ row etc :
+http://flexboxgrid.com/
 
 ================================================
 Replace testimonials on index.js with paper. 
