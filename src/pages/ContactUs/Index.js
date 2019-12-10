@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 
 import { Formik } from 'formik'
 import { Form, Input, PhoneInput, Select, SubmitBtn } from 'react-formik-ui';
+import quote from '../../Images/faq/quote.png'; 
 
 
 const Title = styled.h1`
@@ -16,6 +17,29 @@ const Title = styled.h1`
   margin-bottom: 40px;
 `;
 
+const CommentP = styled.p`
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    max-width: 900px;
+    text-align: center;
+    color: #7a6f71; 
+    // font-size: 36px;
+    margin-bottom: 40px;
+    margin: 0 auto;
+`;
+
+const Name = styled.p`
+font-size: 14px;
+font-weight: 300;
+line-height: 46px;
+font-weight: 600; 
+text-align: center;
+color: #7a6f71; 
+font-size: 20px;
+margin-bottom: 40px;
+margin: 0 auto;
+`;
 
 
 
@@ -244,9 +268,25 @@ const ContactUs = () =>{
     </BothInput>   
           
 
+    {/* comment */}
+      <div className="container-fluid">
+        <div className="row">
+          
+          <CommentP>
+          <div className="text-center">
+                          <img src={quote} alt="" />
+          </div> 
+          My wife and I had been engaged in a financial tailspin with no relief in sight. We turned to HomeVestors for assistance and it was the smartest decision we ever made. From our initial contact to closing, everything moved along in a fluid and professional manner. They gave us a new lease on life in three weeks!          
+
+            <Name> Brian and Ulla C. </Name>                  
+          </CommentP>                      
+
+
+        </div>
+      </div>
+
+
           {/* yellow  */}
-
-
           <div className="yellow-footer-cta">  
                   <div className="container-fluid bg-yellow-lower">
                     <h4 className="almost-done-yellow-top"> Questions?</h4>   
