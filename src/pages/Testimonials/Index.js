@@ -1,5 +1,4 @@
 import React from 'react';
-import { Col, Row, Container, Form } from 'react-bootstrap';
 import './Testimonials.scss';  
 
 import BasicForm from '../../components/BasicForm'; 
@@ -7,6 +6,10 @@ import fivestars from '../../Images/testimonials/five-stars-reviews.png';
 import styled from 'styled-components';
 import Footer from '../../components/Footer'; 
 
+
+const PushDownSection = styled.section`
+  margin-top:30px; 
+`;
 
 const GetCashOfferbtnStyle = {
   background: '#f04134',
@@ -19,7 +22,7 @@ const GetCashOfferbtnStyle = {
 
   const Testimonials = () =>{
     return (<div> 
-      <div className="container-fluid tinted-image"> 
+      <section className="container-fluid tinted-image"> 
           <h1 className="faq-header text-center"> We Buy Ugly Houses Reviews from Recent Sellers. </h1>
           <h3 className="index-h3 text-center">Find out what people are asking about We Buy Ugly Houses®. </h3>
           <div className="s130">
@@ -38,6 +41,7 @@ const GetCashOfferbtnStyle = {
               </div>
             </form>
           </div>
+        </section>
 
         {/* SECOND Container */}
         <div>
@@ -163,7 +167,10 @@ const GetCashOfferbtnStyle = {
             </div>
           </div>
         </div>
-      </div>
+      
+          <PushDownSection>
+            <Footer />
+          </PushDownSection>
       {/* <StyledComponent /> */}      
 
       </div>); 
