@@ -6,6 +6,20 @@ import Footer from '../../components/Footer';
 import { Formik } from 'formik'
 import { Form, Input, PhoneInput, Select, SubmitBtn } from 'react-formik-ui';
 
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: #4a4244; 
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+`;
+
+const GetCashOfferbtnStyle = {
+  background: '#f04134',
+  color: 'white',
+};
+
 const Wrapper = styled.section`
   padding: 4em;
   background: papayawhip;
@@ -26,36 +40,112 @@ const ContactUs = () =>{
 
  {/* Process Container */}
  <Container fluid={true}  className="">
-    
-        {/* icon-calendar */}
-        <div className="row push-down">
-          <div className="col-sm-6 col-xs-12 text-center calendar">  
+
+ <Formik
+  initialValues={{
+    textFieldExample3: '',
+    FirstName: '', 
+    LastName: '', 
+  }}
+
+  onSubmit={data => (alert(JSON.stringify(data)))}
+  render={() => (
+    <Form mode='themed'>
+      
+
+      <div className="row push-down">
+          <div className="col-sm-6 col-xs-12 text-center calendar">   
             
-            <h1 class="confirm-address lessBlack"> <span class="asmanicolor">1.</span> Confirm Address</h1>
+            <Title>      
+                <span class="asmanicolor">1.</span>   Confirm Address
+            </Title>
 
+        <div className="wrap-input100">
+          <Input
+            required='true'
+            name='Street Address'
+            label='Street Address'
+          />
+          </div>
 
-          </div>  
-          
+      <Input
+        required='true'
+        name='City'
+        label='City'
+      />      
+
+      <Select
+        name='State'
+        placeholder='CA'
+        options={[
+          { value: '1', label: 'AK' },
+          { value: '2', label: 'AZ' },
+          { value: '3', label: 'CA' },
+          { value: '4', label: 'DC' },
+          { value: '5', label: 'LA' },
+          { value: '6', label: 'MD' },
+        ]}
+      />    
+
+      <Input
+        required='true'
+        name='Zip'
+        label='Zip'
+      />            
+
+      </div>  
+            
           <div className="col-sm-6 col-xs-12 text-center">  
-            <h1 class="confirm-address lessBlack">  <span class="asmanicolor"> 2.</span> Add Contact Info</h1>
+
+            <Title>      
+                <span class="asmanicolor">2.</span>    Add Contact Info
+            </Title>
+
+
+              <Input
+                required='true'
+                name='FirstName'
+                label='First Name'
+              />
+
+              <Input
+                required='true'
+                name='LastName'
+                label='Last Name'
+              />
+
+
+            <PhoneInput
+                    name='phoneNr5'
+                    label='Phone Nr.'
+                    format='NATIONAL'
+                    defaultCountry='us'
+                    placeholder='(555) 555-5555'
+                  />
+         
+            <Input
+                required='true'     
+                name='Email'
+                label='Email'
+              />    
 
           </div>                                                            
         </div> 
-        <div className="row how-works"> 
-          <div className="col-sm-12 col-xs-12 text-center">  
-            <button type="button" className="btn btn-success"> 
-              Get Cash Offer Now
-            </button>
-          </div>
-        </div>       
+
+      
+      <div className="text-center">
+      <button type="submit" className="btn"  style={GetCashOfferbtnStyle} >
+            Get Cash Offer Now
+          </button>
+          </div> 
+    </Form>
+  )}
+/>
+
+
+
+          
       </Container>
-
-
-
-
-
-
-
 
 
 
