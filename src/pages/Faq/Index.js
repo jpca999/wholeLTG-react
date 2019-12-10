@@ -1,26 +1,12 @@
 import React from 'react';
-
-
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-
 import { Col, Row, Container, Form } from 'react-bootstrap';
-
-import Grid from '@material-ui/core/Grid';
-
 import './Faq.scss';  
-
 import BasicForm from './BasicForm'; 
-
-import StyledComponent from '../../components/StyledComponent'; 
-
+import Footer from '../../components/Footer'; 
 
   const Faq = () =>{
     return (<div> 
     <Container fluid={true} className="tinted-image">
-
-    <div>
           <h1 className="faq-header text-center"> Frequently Asked Questions </h1>
           <h3 className="index-h3 text-center">Find out what people are asking about We Buy Ugly Houses®. </h3>
           <div className="s130">
@@ -39,10 +25,9 @@ import StyledComponent from '../../components/StyledComponent';
               </div>
             </form>
           </div>
-          <br /><br /><br />
-        </div>
+
         {/* SECOND Container */}
-        <div className="container-fluid">
+        <div>
           <div className="row">
             <div className="col-sm-7 col-xs-12 left-faq">                  
               <h1 className="quote "> <img src="/Images/faq/quote.png" alt="" /></h1>
@@ -192,7 +177,11 @@ import StyledComponent from '../../components/StyledComponent';
           </div>
         </div>
       </Container>
-      {/* <StyledComponent /> */}
+      {/* <StyledComponent /> */}      
+
+      <div>
+        Bottom Div 
+      </div>
       </div>); 
 }
 
