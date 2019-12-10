@@ -7,7 +7,6 @@ import { Formik } from 'formik'
 import { Form, Input, PhoneInput, Select, SubmitBtn } from 'react-formik-ui';
 
 
-
 const Title = styled.h1`
   font-size: 1.5em;
   text-align: center;
@@ -16,6 +15,9 @@ const Title = styled.h1`
   font-weight: bold;
   margin-bottom: 40px;
 `;
+
+
+
 
 const Label = styled.label`
   display: flex;
@@ -74,27 +76,66 @@ const Wrapper = styled.section`
 `;
 
 
-
 const customzedInput = {
   background: 'red !important',
 }
 
 
-const GreetingSection = styled.section`
-  padding-left: 20px; 
-  padding-right: 20px; 
-`;
+// const GreetingSection = styled.section`
+//   height: 360px !important; 
+//   background: #22bcb9; 
+// `;
+
+
+const RequestFreeConsultationH1 = styled.h1`
+  font-size: 80px;
+  line-height: 80px;
+  margin-top: 17px; 
+  color: white; 
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.3;
+  max-width: 890px;
+  margin: 0 auto;
+  `;
+
+  const CallH3 = styled.h3`
+  font-size: 30px !important;
+  line-height: 80px;
+  margin-top: 17px; 
+  color: #FFF !important; 
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.3;
+  max-width: 890px;
+  margin: 0 auto;
+
+  
+  margin-top: 25px; 
+  // max-width: 890px;
+  // opacity:.6;
+  `; 
+  
+
 
 const ContactUs = () =>{
         return <div> 
-          <Container fluid={true} className="tinted-image">
-                  <GreetingSection className="insideTinted">  
-                    <h1 class="almost-done"> Almost done! Send us your </h1>
-                    <h1 class="almost-done"> contact info, and get a cash offer today</h1>
+  
+       
+
+
+
+          <div className="container-fluid bgGreen">
+                  <RequestFreeConsultationH1> Request a Free, No Obligation Consultation.</RequestFreeConsultationH1>
+                  
+                  
+                  <CallH3 >Or Call  <a href="tel:123-456-7890"> 408-457-0085</a></CallH3>
+
                     <br />
-                    <h1 class="almost-call">or Call  <a href="tel:123-456-7890"> 408-457-0085</a></h1>
-                  </GreetingSection>
-          </Container>
+
+          </div>
+
+
 
 
           {/* Process Container */}
