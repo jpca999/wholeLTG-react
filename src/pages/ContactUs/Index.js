@@ -32,7 +32,11 @@ const Label = styled.label`
 const GetCashOfferbtnStyle = {
   background: '#f04134',
   color: 'white',
-  marginTop: '23px',
+  marginTop: '63px',
+
+  padding: '15px',
+  width: '330px',
+  bottom: '50px',
 };
 
 
@@ -59,6 +63,18 @@ const Wrapper = styled.section`
 
 const ConfirmAddressSection = styled.section`
   border-right: 1px dashed lightgray;
+  padding-left: 20px; 
+  padding-right: 20px; 
+`;
+
+const AddContactSection = styled.section`
+  padding-left: 20px; 
+  padding-right: 20px; 
+`;
+
+const GreetingSection = styled.section`
+  padding-left: 20px; 
+  padding-right: 20px; 
 `;
 
 
@@ -68,12 +84,12 @@ const ContactUs = () =>{
         return <div> 
 
 <Container fluid={true} className="tinted-image">
-        <section className="insideTinted">  
+        <GreetingSection className="insideTinted">  
           <h1 class="almost-done"> Almost done! Send us your </h1>
           <h1 class="almost-done"> contact info, and get a cash offer today</h1>
           <br />
           <h1 class="almost-call">or Call  <a href="tel:123-456-7890"> 408-457-0085</a></h1>
-        </section>
+        </GreetingSection>
 </Container>
 
  {/* Process Container */}
@@ -92,7 +108,8 @@ const ContactUs = () =>{
       
       
       <div className="row push-down">
-          <div className="col-sm-6 col-xs-12 text-center ">   
+
+          <ConfirmAddressSection  className="col-sm-6 col-xs-12 text-center "> 
                       
                 <Title>      
                     <span class="asmanicolor">1.</span>   Confirm Address
@@ -132,11 +149,11 @@ const ContactUs = () =>{
                     label='Zip'
                   />            
 
-                  </div>  
+                  </ConfirmAddressSection>
             
 
 
-          <div className="col-sm-6 col-xs-12 text-center">  
+          <AddContactSection className="col-sm-6 col-xs-12 text-center"> 
             <Title>      
                 <span class="asmanicolor">2.</span>    Add Contact Info
             </Title>
@@ -168,9 +185,10 @@ const ContactUs = () =>{
                 name='Email'
                 label='Email'
               />    
+            </AddContactSection>                                                        
 
-          </div>                                                            
         </div> 
+        
 
       
       <div className="text-center">
