@@ -7,7 +7,14 @@ import GetCashOfferButton from './GetCashOfferButton';
 const GetCashOfferbtnStyle = {
   background: '#f04134',
   color: 'white',
+  marginTop: '63px',
+  padding: '15px',
+  width: '330px',
+  bottom: '50px',
+
 };
+
+
 
 
 export const BasicForm = () => (

@@ -2,11 +2,20 @@ import React from 'react';
 import { Col, Row, Container, Form } from 'react-bootstrap';
 import './Testimonials.scss';  
 
-// import BasicForm from './BasicForm'; 
+
 import BasicForm from '../../components/BasicForm'; 
 import Footer from '../../components/Footer'; 
-
 import fivestars from '../../Images/testimonials/five-stars-reviews.png';
+import styled from 'styled-components';
+
+const GetCashOfferbtnStyle = {
+  background: '#f04134',
+  color: 'white',
+  marginTop: '63px',
+  padding: '15px',
+  width: '330px',
+  bottom: '50px',
+};
 
   const Testimonials = () =>{
     return (<div> 
@@ -130,14 +139,13 @@ import fivestars from '../../Images/testimonials/five-stars-reviews.png';
                             </div>
                         </div>      
                         
-                        
-                        <div class="row push-down">
-                            <div class="col-sm-12 col-xs-12">  
-                              <button type="button" class="btn  cashOfferBtn"> 
-                                  Get Cash Offer Now
-                              </button>
-                         </div>
-                         </div>
+                      
+
+                         <div className="text-center">
+                          <button type="submit" className="btn"  style={GetCashOfferbtnStyle} >
+                            Get Cash Offer Now
+                          </button>
+                    </div> 
 
 
 

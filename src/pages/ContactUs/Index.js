@@ -35,7 +35,6 @@ const GetCashOfferbtnStyle = {
   background: '#f04134',
   color: 'white',
   marginTop: '63px',
-
   padding: '15px',
   width: '330px',
   bottom: '50px',
@@ -240,7 +239,7 @@ const ContactUs = () =>{
 
                 
                 <div className="text-center">
-                <button type="submit" className="btn"  style={GetCashOfferbtnStyle} >
+                    <button type="submit" className="btn"  style={GetCashOfferbtnStyle} >
                       Get Cash Offer Now
                     </button>
                     </div> 
