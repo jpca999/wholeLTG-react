@@ -126,32 +126,25 @@ const RequestFreeConsultationH1 = styled.h1`
   line-height: 1.3;
   max-width: 890px;
   margin: 0 auto;
-
-  
   margin-top: 25px; 
   // max-width: 890px;
   // opacity:.6;
   `; 
   
+const BgGreen = styled.section`
+  background: #22bcb9;
+  color: #4a4244;
+`; 
 
 
 const ContactUs = () =>{
         return <div> 
   
-       
-
-
-
-          <div className="container-fluid bgGreen">
+          <BgGreen className="container-fluid">
                   <RequestFreeConsultationH1> Request a Free, No Obligation Consultation.</RequestFreeConsultationH1>
-                  
-                  
                   <CallH3 >Or Call  <a href="tel:123-456-7890"> 408-457-0085</a></CallH3>
-
                     <br />
-
-          </div>
-
+          </BgGreen>
 
 
 
