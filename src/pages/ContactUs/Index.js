@@ -139,8 +139,10 @@ const ContactUs = () =>{
 
 
           {/* Process Container */}
-          <Container fluid={true} >
-          <BothInput>
+
+          <div className="container-fluid ">
+            
+          <BothInput >
 
           <Formik
             initialValues={{
@@ -250,7 +252,7 @@ const ContactUs = () =>{
 
 
 </BothInput>   
-                </Container>
+              </div>
 
 
 
