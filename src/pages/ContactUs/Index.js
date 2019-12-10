@@ -55,7 +55,7 @@ const GetCashOfferbtn = styled.button`
 
 
 const BothInput = styled.section`
-  background-color: '#f8f8f8',
+  background: #f8f8f8;
 `;
 
 
@@ -140,9 +140,8 @@ const ContactUs = () =>{
 
           {/* Process Container */}
 
-          <div className="container-fluid ">
             
-          <BothInput >
+          <BothInput className="container-fluid ">
 
           <Formik
             initialValues={{
@@ -252,7 +251,6 @@ const ContactUs = () =>{
 
 
 </BothInput>   
-              </div>
 
 
 
