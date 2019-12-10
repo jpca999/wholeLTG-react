@@ -1,10 +1,13 @@
 import React from 'react';
 import { Col, Row, Container, Form } from 'react-bootstrap';
-import './Faq.scss';  
+import './Testimonials.scss';  
+
+// import BasicForm from './BasicForm'; 
+
 import BasicForm from '../../components/BasicForm'; 
 import Footer from '../../components/Footer'; 
 
-  const Faq = () =>{
+  const Testimonials = () =>{
     return (<div> 
     <Container fluid={true} className="tinted-image">
           <h1 className="faq-header text-center"> Frequently Asked Questions </h1>
@@ -187,4 +190,4 @@ import Footer from '../../components/Footer';
 
 
 
-export default Faq; 
+export default Testimonials; 

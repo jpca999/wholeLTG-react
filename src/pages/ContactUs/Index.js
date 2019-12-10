@@ -248,14 +248,7 @@ const ContactUs = () =>{
             )}
           />
 
-
-
-</BothInput>   
-
-
-
-            <br/> <br/>
-
+    </BothInput>   
           
 
           {/* yellow  */}

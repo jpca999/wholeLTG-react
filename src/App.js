@@ -12,7 +12,7 @@ import HowItWorks from './pages/HowItWorks.js';
 import ContactUs from './pages/ContactUs/Index.js';
 
 import WhyUs from './pages/WhyUs.js';
-import Testimonials from './pages/Testimonials.js'
+import Testimonials from './pages/Testimonials/Index.js'
 
 // import 'react-select/dist/react-select.css';
 
