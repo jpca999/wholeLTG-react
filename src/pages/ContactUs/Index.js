@@ -128,7 +128,7 @@ const RequestFreeConsultationH1 = styled.h1`
   margin: 0 auto;
   margin-top: 25px; 
   // max-width: 890px;
-  // opacity:.6;
+  opacity:.6;
   `; 
   
 const BgGreen = styled.section`
