@@ -24,7 +24,6 @@ const CommentP = styled.p`
     max-width: 900px;
     text-align: center;
     color: #7a6f71; 
-    // font-size: 36px;
     margin-bottom: 40px;
     margin: 0 auto;
 `;
