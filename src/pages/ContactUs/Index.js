@@ -6,6 +6,8 @@ import Footer from '../../components/Footer';
 import { Formik } from 'formik'
 import { Form, Input, PhoneInput, Select, SubmitBtn } from 'react-formik-ui';
 
+
+
 const Title = styled.h1`
   font-size: 1.5em;
   text-align: center;
@@ -15,15 +17,51 @@ const Title = styled.h1`
   margin-bottom: 40px;
 `;
 
+const Label = styled.label`
+  display: flex;
+  flex-direction: column;
+  color: #777;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+  font-size: 20px;
+  margin: 0.5em 0;
+  position: relative;
+`;
+
+
 const GetCashOfferbtnStyle = {
   background: '#f04134',
   color: 'white',
+  marginTop: '23px',
 };
+
+
+const GetCashOfferbtn = styled.button`
+  /* Adapt the colors based on primary prop */
+  background: ${props => props.primary ? "palevioletred" : "white"};
+  color: ${props => props.primary ? "white" : "palevioletred"};
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px;
+`;
+
+const customzedInput = {
+  background: 'red !important',
+}
+
 
 const Wrapper = styled.section`
   padding: 4em;
   background: papayawhip;
 `;
+
+const ConfirmAddressSection = styled.section`
+  border-right: 1px dashed lightgray;
+`;
+
+
 
 
 const ContactUs = () =>{
@@ -52,51 +90,53 @@ const ContactUs = () =>{
   render={() => (
     <Form mode='themed'>
       
-
+      
       <div className="row push-down">
-          <div className="col-sm-6 col-xs-12 text-center calendar">   
+          <div className="col-sm-6 col-xs-12 text-center ">   
+                      
+                <Title>      
+                    <span class="asmanicolor">1.</span>   Confirm Address
+                </Title>
+
+                  <Input
+                    className='customzedInput'
+                    required='true'
+                    name='Street Address'
+                    label='Street Address'
+                    // style=''
+                  />      
+
+
+                  <Input
+                    required='true'
+                    name='City'
+                    label='City'
+                  />      
+
+                  <Select
+                    name='State'
+                    placeholder='CA'
+                    options={[
+                      { value: '1', label: 'AK' },
+                      { value: '2', label: 'AZ' },
+                      { value: '3', label: 'CA' },
+                      { value: '4', label: 'DC' },
+                      { value: '5', label: 'LA' },
+                      { value: '6', label: 'MD' },
+                    ]}
+                  />    
+
+                  <Input
+                    required='true'
+                    name='Zip'
+                    label='Zip'
+                  />            
+
+                  </div>  
             
-            <Title>      
-                <span class="asmanicolor">1.</span>   Confirm Address
-            </Title>
 
-        <div className="wrap-input100">
-          <Input
-            required='true'
-            name='Street Address'
-            label='Street Address'
-          />
-          </div>
 
-      <Input
-        required='true'
-        name='City'
-        label='City'
-      />      
-
-      <Select
-        name='State'
-        placeholder='CA'
-        options={[
-          { value: '1', label: 'AK' },
-          { value: '2', label: 'AZ' },
-          { value: '3', label: 'CA' },
-          { value: '4', label: 'DC' },
-          { value: '5', label: 'LA' },
-          { value: '6', label: 'MD' },
-        ]}
-      />    
-
-      <Input
-        required='true'
-        name='Zip'
-        label='Zip'
-      />            
-
-      </div>  
-            
           <div className="col-sm-6 col-xs-12 text-center">  
-
             <Title>      
                 <span class="asmanicolor">2.</span>    Add Contact Info
             </Title>
@@ -149,10 +189,9 @@ const ContactUs = () =>{
 
 
 
-
-
-
   <br/> <br/>
+
+ 
 
 {/* yellow  */}
 
