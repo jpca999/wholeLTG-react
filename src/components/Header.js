@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Header = ()=>{
     return (   
         <Navbar bg="light" expand="md" className="HeaderHeight">
-        <Navbar.Brand style={{backgroundImage: `url(${image}` }} href="#home">Liberty Trust Group</Navbar.Brand>
+        <Navbar.Brand style={{backgroundImage: `url(${image}` }} href="#home">Liberty LTG</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col, Row, Container, Form } from 'react-bootstrap';
 
 const ContactUs = () =>{
         return <div> 

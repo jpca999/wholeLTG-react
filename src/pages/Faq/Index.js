@@ -1,4 +1,6 @@
 import React from 'react';
+
+
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
@@ -9,16 +11,16 @@ import Grid from '@material-ui/core/Grid';
 
 import './Faq.scss';  
 
-import Basic from './Basic'; 
+import BasicForm from './BasicForm'; 
+
+import StyledComponent from '../../components/StyledComponent'; 
 
 
   const Faq = () =>{
     return (<div> 
     <Container fluid={true} className="tinted-image">
 
-
     <div>
-        <div className="container-fluid tinted-image">
           <h1 className="faq-header text-center"> Frequently Asked Questions </h1>
           <h3 className="index-h3 text-center">Find out what people are asking about We Buy Ugly Houses®. </h3>
           <div className="s130">
@@ -182,16 +184,15 @@ import Basic from './Basic';
               <h2 className="right-faq-h1 text-center"> Request a free, no obligation consultation.</h2>                
               <div className="row">
                 <div className="col-sm-12 col-xs-12"> 
-                  <Basic />
+                  <BasicForm />
 
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
       </Container>
+      {/* <StyledComponent /> */}
       </div>); 
 }
 

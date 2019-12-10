@@ -11,4 +11,7 @@ create the icon for the header top left.
 
 https://magic.reactjs.net/htmltojsx.htm
 
+==================
+Get the values from local storage and populate it on BAsicForm
+==================
 
