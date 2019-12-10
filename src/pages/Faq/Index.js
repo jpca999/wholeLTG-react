@@ -3,6 +3,8 @@ import { Col, Row, Container, Form } from 'react-bootstrap';
 import './Faq.scss';  
 import BasicForm from '../../components/BasicForm'; 
 import Footer from '../../components/Footer'; 
+import quote from '../../Images/faq/quote.png'; 
+// from <h1 class="quote "> <img src="/Images/faq/quote.png" alt="">  </h1>
 
   const Faq = () =>{
     return (<div> 
@@ -30,7 +32,7 @@ import Footer from '../../components/Footer';
         <div>
           <div className="row">
             <div className="col-sm-7 col-xs-12 left-faq">                  
-              <h1 className="quote "> <img src="/Images/faq/quote.png" alt="" /></h1>
+              <h1 className="quote "> <img src={quote} alt="" /></h1>
               <p className="quote-p">I lived in the house for 32 years, and spent the last three years trying to fix it up and sell. Finally, I had to sell it quickly and was tired of putting money into rehabbing the house, plus traveling more than 65 miles to work each day. A friend of mine encouraged me to call even though I really didn’t have an ugly house. They saw the care and the work that I put into the house, and they made me a great offer. HomeVestors was my answer! — Brenda T. </p>
               <h1 className="almost-done-yellow-top push-down">
                 If you’re selling a house, you probably have a lot of questions. Here are some of the most common ones people ask us.
@@ -179,9 +181,6 @@ import Footer from '../../components/Footer';
       </Container>
       {/* <StyledComponent /> */}      
 
-      <div>
-        Bottom Div 
-      </div>
       </div>); 
 }
 

@@ -80,12 +80,6 @@ const customzedInput = {
 }
 
 
-// const GreetingSection = styled.section`
-//   height: 360px !important; 
-//   background: #22bcb9; 
-// `;
-
-
 const RequestFreeConsultationH1 = styled.h1`
   font-size: 80px;
   line-height: 80px;
