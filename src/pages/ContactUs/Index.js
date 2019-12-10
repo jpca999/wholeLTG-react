@@ -29,6 +29,7 @@ const CommentP = styled.p`
 `;
 
 const Name = styled.p`
+display: block; 
 font-size: 14px;
 font-weight: 300;
 line-height: 46px;
@@ -176,12 +177,12 @@ const ContactUs = () =>{
                     <ConfirmAddressSection  className="col-sm-6 col-xs-12 text-center "> 
 
                           <Title>      
-                              <span class="asmanicolor">1.</span>  Add Property Address
+                              <span className="asmanicolor">1.</span>  Add Property Address
                           </Title>
 
                             <Input
                               className='customzedInput'
-                              required='true'
+                              required={true}
                               name='Street Address'
                               label='Street Address'
                               // style=''
@@ -189,7 +190,7 @@ const ContactUs = () =>{
 
 
                             <Input
-                              required='true'
+                              required={true}
                               name='City'
                               label='City'
                             />      
@@ -208,7 +209,7 @@ const ContactUs = () =>{
                             />    
 
                             <Input
-                              required='true'
+                              required={true}
                               name='Zip'
                               label='Zip'
                             />            
@@ -219,18 +220,18 @@ const ContactUs = () =>{
 
                     <AddContactSection className="col-sm-6 col-xs-12 text-center"> 
                       <Title>      
-                          <span class="asmanicolor">2.</span>    Add Contact Info
+                          <span className="asmanicolor">2.</span>    Add Contact Info
                       </Title>
 
 
                         <Input
-                          required='true'
+                          required={true}
                           name='FirstName'
                           label='First Name'
                         />
 
                         <Input
-                          required='true'
+                          required={true}
                           name='LastName'
                           label='Last Name'
                         />
@@ -245,7 +246,7 @@ const ContactUs = () =>{
                             />
                   
                       <Input
-                          required='true'     
+                          required={true}     
                           name='Email'
                           label='Email'
                         />    
@@ -271,14 +272,22 @@ const ContactUs = () =>{
       <div className="container-fluid">
         <div className="row">
           
+     
+
           <CommentP>
           <div className="text-center">
                           <img src={quote} alt="" />
           </div> 
-          My wife and I had been engaged in a financial tailspin with no relief in sight. We turned to HomeVestors for assistance and it was the smartest decision we ever made. From our initial contact to closing, everything moved along in a fluid and professional manner. They gave us a new lease on life in three weeks!          
+          
+          My wife and I had been engaged in a financial tailspin with no relief in sight. We turned to HomeVestors for assistance and it was the smartest decision we ever made. From our initial contact to closing, everything moved along in a fluid and professional manner. They gave us a new lease on life in three weeks!                         
+          </CommentP> 
 
-            <Name> Brian and Ulla C. </Name>                  
-          </CommentP>                      
+              
+            <div className="row text-center">
+              <Name> Brian and Ulla C. </Name>   
+            </div>
+
+          
 
 
         </div>
