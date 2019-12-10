@@ -21,7 +21,7 @@ export const BasicForm = () => (
   onSubmit={data => (alert(JSON.stringify(data)))}
   render={() => (
     <Form mode='themed'>
-
+      
       <Input
         required='true'
         name='FirstName'

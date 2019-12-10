@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components'; 
-import { Col, Row, Container, Form } from 'react-bootstrap';
-import PropTypes from 'prop-types'; 
+import { Col, Row, Container } from 'react-bootstrap';
 import Footer from '../../components/Footer'; 
-import iconpenpaper from '../../Images/index/icon-pen-paper.png';
-import iconwallet from '../../Images/index/icon-wallet.png'; 
+
+import { Formik } from 'formik'
+import { Form, Input, PhoneInput, Select, SubmitBtn } from 'react-formik-ui';
 
 const Wrapper = styled.section`
   padding: 4em;
