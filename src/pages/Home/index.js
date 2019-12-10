@@ -39,9 +39,6 @@ const Home = () =>{
         </div>
 </Container>
 
-
-
-
     <Container fluid={true} >
             <div className="row">
               <div className="col-sm-6 col-xs-12 text-center">                  
@@ -343,8 +340,8 @@ const Home = () =>{
             </div>                    
           </div>
           <div className="quest-bk" /> 
-        </div>
-      </div>
+  </div>
+</div>
       <Footer />
     </div>
 }
