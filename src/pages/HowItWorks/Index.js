@@ -21,6 +21,7 @@ const GetCashOfferbtnStyle = {
 };
 
 const BgYellow = styled.section`
+  height: 183px;
   background: #f9d507;
   color: #4a4244;
 `; 
@@ -35,8 +36,49 @@ const BgYellowInnerP = styled.p`
   z-index: 1;
 `; 
 
+const BenefitsH2 = styled.h2`
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 5px 0 15px;
+  position: relative;
+  color: #505050;
+  text-align: left;
+  margin-bottom: 40px; 
+`;
 
+const BenefitsP = styled.p`
+  color: #7a6f71;
+  line-height: 34px;
+  margin-top:14px;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 40px; 
+`;
 
+const BottomP = styled.p`
+  color: #7a6f71;
+  line-height: 34px;
+  margin-top:14px;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 100px;
+`;
+
+const BgDarkGreen = styled.section`
+  background: #22bcb9; 
+  color: #4a4244;
+`; 
+
+const SellUsYourHouse = styled.h1`
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 80px;
+  font-weight: bolder;
+  color: #4a4244;
+  width: 80%; 
+  margin-bottom: 45px; 
+`;
 
   const HowItWorks = () =>{
     return (<div> 
@@ -70,10 +112,6 @@ const BgYellowInnerP = styled.p`
           </BgYellow>
 
 
-
-
-
-
         <div>
           <div className="row">
             <div className="col-sm-7 col-xs-12 left-faq">                  
@@ -91,88 +129,78 @@ const BgYellowInnerP = styled.p`
                 <p class="testi-page-p push-down"> We have local professional home buyers in your area ready to answer any questions you may have about selling your house. Call 866-200-6475 or fill out the form for a fast cash offer. </p>
             
 
-                <div class="list">
-                  <ul>
-                  <li class="testi-page-li">No Painting </li>
-                  <li class="testi-page-li">No Repairs </li>
-                  <li class="testi-page-li">No worrying </li>
-                  <li class="testi-page-li">No Hassles</li>
-                </ul>
-                </div>
-
                 <div class="row push-down">
                   <div class="col-sm-12 col-xs-12">  
-                      <h6 class="testiPage-header-h6">
-                          Morris H. (Flint, Michigan)
-                      </h6>
+                   <BenefitsH2 class="testiPage-header-h6 text-center">
+                       <span className="asmanicolor">1.</span>  Speak With an Expert. 
+                   </BenefitsH2>
                       
-                      <div class="text-left">
-                          <img class="testiPage-fivestar" src={fivestars} alt="" /> 
-                      </div>  
-
-                      <p class="testiPage-p">  Very relaxed, no pressure and on my timeline.</p> 
+                      <BenefitsP>  HomeVestors, the ‘We Buy Ugly Houses® People’, is the most trusted name in the business, operating by the highest systems and standards in the industry.</BenefitsP> 
                       <hr class="testiPage-hr" />
                     </div>
                 </div>
 
-                <div class="row push-down">
-                    <div class="col-sm-12 col-xs-12">  
-                        <h6 class="testiPage-header-h6 text-center">
-                            Melody W. (Hyannis, Massachusetts)
-                        </h6>
-                        
-                        <div class="text-left">
-                            <img class="testiPage-fivestar" src={fivestars} alt="" /> 
-                        </div>     
-                        <p class="testiPage-p">  It was a great experience.we had some hurdles along the way ..but they worked with usand we are happy how it all turned out
-                          </p> 
-                        <hr class="testiPage-hr" />
-                      </div>
-                  </div>
 
-                  <div class="row push-down">
-                      <div class="col-sm-12 col-xs-12">  
-                          <h6 class="testiPage-header-h6">
-                              Janenne M. (Yorktown, Virginia)
-                          </h6>
-                          
-                          <div class="text-left">
-                              <img class="testiPage-fivestar" src={fivestars} alt="" /> 
-                          </div>     
-                          <p class="testiPage-p">  The gentlemen I worked with were great! They made this process so easy and were very fair in their offer. I would not hesitate to recommend Home Vestors!!</p> 
-                          <hr class="testiPage-hr" />
-                        </div>
+                <div class="row push-down">
+                  <div class="col-sm-12 col-xs-12">  
+                   <BenefitsH2 class="testiPage-header-h6 text-center">
+                       <span className="asmanicolor">2.</span>  We Visit Your House. 
+                   </BenefitsH2>
+                      
+                      <BenefitsP>  We meet with you to understand your situation. You don’t have to spend a dime to fix up your house. You don’t even have to clean it up. We pay cash for your house, as is. It’s just that simple.</BenefitsP> 
+                      <hr class="testiPage-hr" />
                     </div>
-                    
-                    <div class="row push-down">
-                        <div class="col-sm-12 col-xs-12">  
-                            <h6 class="testiPage-header-h6">
-                                Pierre Y. (Saint Louis, Missouri)
-                            </h6>
-                            
-                            <div class="text-left">
-                                <img class="testiPage-fivestar" src={fivestars} alt="" /> 
-                            </div>     
-                            <p class="testiPage-p">  My HomeVestors representative dealt with me in a fair and professional manner and bought my house when I needed to sell it quickly.</p> 
-                            <hr class="testiPage-hr" />
-                          </div>
-                      </div>
+                </div>
+
+
+
+                <div class="row push-down">
+                  <div class="col-sm-12 col-xs-12">  
+                   <BenefitsH2 class="testiPage-header-h6 text-center">
+                       <span className="asmanicolor">3.</span>  Receive a Cash Offer. 
+                   </BenefitsH2>
                       
+                      <BenefitsP>  HomeVestors® pays cash so there is no waiting for mortgage approvals. After a property analysis is completed, we can make a cash offer. This typically gives us the ability to close – and put cash in your hands – much more quickly.</BenefitsP> 
+                      <hr class="testiPage-hr" />
+                    </div>
+                </div>
+
+
+                <div class="row push-down">
+                  <div class="col-sm-12 col-xs-12">  
+                   <BenefitsH2 class="testiPage-header-h6 text-center">
+                       <span className="asmanicolor">4.</span>  We Pay Typical Closing Costs. 
+                   </BenefitsH2>
                       
-                      <div class="row push-down">
-                          <div class="col-sm-12 col-xs-12">  
-                              <h6 class="testiPage-header-h6">
-                                  Andrei B. (ARVADA, Colorado)
-                              </h6>
-                              
-                              <div class="text-left">
-                                  <img class="testiPage-fivestar" src={fivestars} alt="" /> 
-                              </div>     
-                              <p class="testiPage-p"> Thank you Ryan and Vivianne for helping me get red of an "Ugly House".It was an easy and painless process. </p> 
-                              <hr class="testiPage-hr" />
-                            </div>
-                        </div>      
-                        
+                      <BenefitsP>  When you sell your house to us, you’ll save even more money because we pay typical closing costs – less for you to worry about!</BenefitsP> 
+                      <hr class="testiPage-hr" />
+                    </div>
+                </div>
+
+
+                <div class="row push-down">
+                  <div class="col-sm-12 col-xs-12">  
+                   <BenefitsH2 class="testiPage-header-h6 text-center">
+                       <span className="asmanicolor">5.</span> Move On. 
+                   </BenefitsH2>
+                      
+                      <BenefitsP>  We typically close quickly, so you can move on with your life. Selling your house through traditional methods can take months or even years- if it sells at all. It takes a lot of effort and finances to make the repairs necessary to list a house, not to mention the time and headaches involved in closing. We buy all kinds of investment houses, and we can close quickly or allow as much time as you need.</BenefitsP> 
+                      <hr class="testiPage-hr" />
+                    </div>
+                </div>
+
+
+
+                <div class="row push-down">
+                  <div class="col-sm-12 col-xs-12">                      
+                      <BottomP>  Don’t forget we pay cash, cover closing costs, buy as-is, and move fast. Call us at 866-200-6475 today!</BottomP> 
+                    </div>
+                </div>
+
+
+
+
+                                       
                       
 
                          <div className="text-center">
@@ -198,6 +226,50 @@ const BgYellowInnerP = styled.p`
           </div>
         </div>
       
+
+
+        <BgDarkGreen className="container-fluid">
+            <div className="row text-center"> 
+                  <SellUsYourHouse className="text-center"> Sell Us Your Ugly House </SellUsYourHouse>
+
+            </div>     
+
+          {/* <div className="container-fluid">  */}
+              <div className="row"> 
+                    <div className="col-sm-6 col-xs-12">
+                        <article className="left-list">
+                              <ul>
+                              <li className="how-it-works-li"><span className="tickblue">✔</span>  Structural issues </li>
+                              <li className="how-it-works-li"><span className="tickblue">✔</span>  Facing foreclosure </li>
+                              <li className="how-it-works-li"><span className="tickblue">✔</span>  Relocation or job transfer </li>
+                              <li className="how-it-works-li"><span className="tickblue">✔</span>  Undesirable neighborhoods</li>
+                              <li className="how-it-works-li"><span className="tickblue">✔</span>  Divorce</li>
+                              <li className="how-it-works-li"><span className="tickblue">✔</span>  Need for cosmetic fix-up</li>
+                              <li className="how-it-works-li"><span className="tickblue">✔</span>  Retirement or downsizing</li>
+                            </ul>
+                          </article>
+                      </div>
+                      <div className="col-sm-6 col-xs-12">
+                          <article className="list">
+                                  <ul>
+                                  <li className="how-it-works-li"><span className="tickblue">✔</span>  Death of a loved one </li>
+                                  <li className="how-it-works-li"><span className="tickblue">✔</span>  Liquidating assets to pay bills </li>
+                                  <li className="how-it-works-li"><span className="tickblue">✔</span>  Inheriting a property you can’t keep </li>
+                                  <li className="how-it-works-li"><span className="tickblue">✔</span>  Tired of living in an ugly house</li>
+                                  <li className="how-it-works-li"><span className="tickblue">✔</span>  Troublesome mortgage terms</li>
+                                  <li className="how-it-works-li"><span className="tickblue">✔</span>  Job loss</li>
+                                  <li className="how-it-works-li"><span className="tickblue">✔</span>  …and many more</li>
+                                </ul>
+                              </article>
+                      </div>
+              {/* </div>      */}
+            </div>
+        </BgDarkGreen>
+
+
+
+
+
           <PushDownSection>
           <Questions /> 
             <Footer />

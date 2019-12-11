@@ -43,6 +43,28 @@ margin: 20px 0 80px;
     // margin-top: 40px; 
 }
 
+/*  How It Works  */
+
+.how-it-works-li{
+    font-family: Helvetica,Arial,sans-serif;
+    line-height: 20px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    // display: inline-block;
+    list-style: none; 
+    /* Give the bullet room on the left hand side */
+    padding: 0;
+    position: relative;
+    color: rgba(74,66,68,.8); 
+}
+
+.left-list{
+    font-family: Helvetica,Arial,sans-serif;
+    margin-left: 140px; 
+}
+
+/*  How It Works  End */
+
 .testi-page-li{
         line-height: 20px;
         font-size: 18px;
