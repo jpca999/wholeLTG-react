@@ -5,7 +5,7 @@ import BasicForm from '../../components/BasicForm';
 import fivestars from '../../Images/testimonials/five-stars-reviews.png';
 import styled from 'styled-components';
 import Footer from '../../components/Footer'; 
-
+import Questions from '../../components/Questions'; 
 
 const PushDownSection = styled.section`
   margin-top:30px; 
@@ -169,6 +169,7 @@ const GetCashOfferbtnStyle = {
         </div>
       
           <PushDownSection>
+          <Questions /> 
             <Footer />
           </PushDownSection>
       {/* <StyledComponent /> */}      
