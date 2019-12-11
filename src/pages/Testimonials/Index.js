@@ -48,7 +48,7 @@ const GetCashOfferbtnStyle = {
           <div className="row">
             <div className="col-sm-7 col-xs-12 left-faq">                  
               
-            <h1 class="almost-done-yellow-top push-down">
+            <h1 class="almost-done-yellow-top push-down2">
                     Why We're America's #1 Home Buyer.
                 </h1>
 
@@ -156,7 +156,7 @@ const GetCashOfferbtnStyle = {
             
             </div>  
             {/* col end */}
-            <div className="col-sm-5 col-xs-12 push-down right-faq">  
+            <div className="col-sm-5 col-xs-12 right-faq">  
               <h2 className="right-faq-h1 text-center"> Request a free, no obligation consultation.</h2>                
               <div className="row">
                 <div className="col-sm-12 col-xs-12"> 
