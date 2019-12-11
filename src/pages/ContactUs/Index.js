@@ -262,29 +262,23 @@ const ContactUs = () =>{
           
 
     {/* comment */}
-      <div className="container-fluid">
+      <section className="container-fluid">
         <div className="row">
           
-     
-
-          <CommentP>
-          <div className="text-center">
-                          <img src={quote} alt="" />
-          </div> 
-          
-          My wife and I had been engaged in a financial tailspin with no relief in sight. We turned to HomeVestors for assistance and it was the smartest decision we ever made. From our initial contact to closing, everything moved along in a fluid and professional manner. They gave us a new lease on life in three weeks!                         
-          </CommentP> 
-
+           <CommentP>
+              <div className="text-center">
+                              <img src={quote} alt="" />
+              </div> 
               
-            <div className="row text-center">
-              <Name> Brian and Ulla C. </Name>   
-            </div>
+              My wife and I had been engaged in a financial tailspin with no relief in sight. We turned to HomeVestors for assistance and it was the smartest decision we ever made. From our initial contact to closing, everything moved along in a fluid and professional manner. They gave us a new lease on life in three weeks!                         
+              </CommentP> 
 
-          
+        </div> 
+        <div className="row">
+                  <Name className="text-center"> Brian and Ulla C. </Name>   
+        </div>                        
 
-
-        </div>
-      </div>
+      </section>
 
 
           {/* yellow  */}
