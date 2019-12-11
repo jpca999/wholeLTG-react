@@ -8,7 +8,8 @@ import Faq from './pages/Faq/Index.js';
 
 import PageTwo from './pages/PageTwo'; 
 
-import HowItWorks from './pages/HowItWorks.js';
+import HowItWorks from './pages/HowItWorks/Index.js';
+
 import ContactUs from './pages/ContactUs/Index.js';
 
 import WhyUs from './pages/WhyUs.js';
