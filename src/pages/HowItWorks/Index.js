@@ -269,11 +269,8 @@ const SellUsYourHouse = styled.h1`
 
 
 
-
-          <PushDownSection>
           <Questions /> 
             <Footer />
-          </PushDownSection>
       {/* <StyledComponent /> */}      
 
       </div>); 
