@@ -79,16 +79,16 @@ const BgYellowInnerP = styled.p`
             <div className="col-sm-7 col-xs-12 left-faq">                  
               
             <h1 class="almost-done-yellow-top push-down2">
-                    Why We're America's #1 Home Buyer.
+                    We Buy Houses Ugly or Not℠
                 </h1>
 
 
                 <div class="text-center push-down">
-                    <p class="p-above-leading push-down">WE BUY UGLY HOUSES REVIEWS & HowItWorks</p>
+                    <p class="p-above-leading push-down"> (Rem) WE BUY UGLY HOUSES REVIEWS & HowItWorks</p>
                 </div>
 
               
-                <p class="testi-page-p push-down">Unlike other home buyers, we buy your house “as is.” Read house buyer reviews & HowItWorks below. </p>
+                <p class="testi-page-p push-down"> We have local professional home buyers in your area ready to answer any questions you may have about selling your house. Call 866-200-6475 or fill out the form for a fast cash offer. </p>
             
 
                 <div class="list">
